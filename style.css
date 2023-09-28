@@ -298,7 +298,7 @@ transform: rotate(-45deg);
 
 .card4 {
     background-size: cover;
-    position: -webkit-sticky;
+    /* position: -webkit-sticky; */
     background-image: url(img/card4.jpg);
     height: 180px;
     flex-shrink: 0;
@@ -369,7 +369,7 @@ transform: rotate(-45deg);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    /* -ms-transform: translate(-50%, -50%); */
     opacity:0;
     background: none;
     border: 1px solid #FFFFFF;
