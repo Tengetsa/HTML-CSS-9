@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    /*font-family: 'Open Sans', sans-serif;*/
 }
 
 img {
@@ -27,7 +26,6 @@ header {
     padding-right: calc(50% - 570px);
     display: flex;
     justify-content: space-between;
-
 }
 
 .container {
@@ -42,7 +40,6 @@ header {
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    /* margin: 18px 0 19px 231px;  */
     margin-top: 18px;
     margin-bottom: 19px;
     gap: 41px; 
@@ -57,6 +54,10 @@ header {
     cursor: pointer;
 }
 
+.hidden_menu {
+    display: none;
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -64,12 +65,92 @@ header {
     width: 159px;
     height: 29px;
     flex-shrink: 0;
-    /* margin-right: ; */
     margin-top: 16px;
     margin-bottom: 20px;
     padding-top: 10px;
     position: relative;
     gap: 25px;
+}
+
+.menu-active {
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 100%;
+    height: 602px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    padding-left: 33px;
+}
+
+.menu-active_all {
+    width: 200px;
+    height: inherit;
+    background: white;
+    margin-left: auto;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 37px 0 0px 24px;
+    padding-top: 32px;
+    padding-left: 32px;
+    position: relative;
+    max-height: inherit;
+    overflow: auto;
+    list-style: none;
+}
+
+.menu-active_all h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+}
+
+.menu-active_all h3 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f16d7f;
+    padding-top: 20px;
+}
+
+.menu__item {
+    display: block;
+    padding-left: 20px;
+    padding-top: 12px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+    transition-duration: 0.25s;
+}
+
+.menu-close {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    background: white;
+    right: 15px;
+    top: 15px;
+    width: 28px;
+    height: 28px;
+    opacity: 0.3;
+}
+
+.menu-close:hover {
+opacity: 1;
+}
+
+.menu-close:before {
+transform: rotate(45deg);
+}
+
+.menu-close:after {
+transform: rotate(-45deg);
 }
 
 .btn1_heder {
@@ -355,9 +436,6 @@ header {
     color: #FFF;
 }
 
-/*
-*/
-
 .main__bottom {
     margin: 0 auto;
     align-items: center;
@@ -368,9 +446,6 @@ header {
     max-height: 341px;
     margin: auto;
     background: #222224;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;    
@@ -653,9 +728,6 @@ header {
         max-width: 768px;
         max-height: 450px;
         margin-top: 65px;
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -741,9 +813,7 @@ header {
     .poster {
         max-width: 375px;
         color: #F1E4E6;
-        /* padding: 148px 56px 149px 56px; */
         margin-bottom: 64px;
-        
     }
 
     .brend {
@@ -767,8 +837,6 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr; */
     }
 
     .card1 {
@@ -816,10 +884,8 @@ header {
         margin-bottom: 85px;
    }
 
-
     .main__bottom__info {
-        /* grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr; */
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -843,10 +909,6 @@ header {
         margin-bottom: 14px;
     }
 
-    .main__bottom__info__card p {
-
-    }
-
     .main__bottom__subscribe {
         height: 550px;
         width: 375px;
@@ -861,7 +923,6 @@ header {
         gap: 48px;
     }
 
-    
     .main__bottom__subscribe__info {
         width: 343px;
         height: 194px;
