@@ -382,7 +382,7 @@ transform: rotate(-45deg);
 .cards_shop_text {
     background: #F8F8F8;
     font-family: Lato;
-    padding: 24px 16px;
+    padding: 24px 30px 20px 18px;
 }
 
 .cards_shop_text h4 {
@@ -440,12 +440,15 @@ transform: rotate(-45deg);
     max-height: 341px;
     margin: auto;
     background: #222224;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;   
     gap: 30px;
     padding-top: 103px;
     padding-bottom: 104px;
+
+
 }
 
 .main__bottom__info__card {
@@ -459,19 +462,18 @@ transform: rotate(-45deg);
 
 .main__bottom__info__card h2 {
     font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: #FBFBFB;
+    margin-top: 19px;
+    margin-bottom: 16px;
 }
 
 .main__bottom__info__card p {
     font-family: 'Lato';
-    font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    line-height: 17px;
     text-align: center;
     color: #FBFBFB;
 }
